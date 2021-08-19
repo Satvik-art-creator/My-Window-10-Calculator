@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: default;
+}
+
+input[type="button"]{
+    cursor: pointer;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.Calc{
+    background-color: #303030;
+    height: 440px;
+    width: 450px;
+    box-shadow: 0 0 100px 1px grey;
+}
+
+.Calc input{
+    border: none;
+    outline: none;
+    background-color: #303030;
+}
+
+.Calc #display_ans{
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.Calc .content input{
+    width: calc(100% / 4);
+    border: 1px solid #504f4f;
+    height: 80px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.Calc .content input.num{
+    background-color: #101011;
+}
+
+.Calc .content input:hover{
+    background-color: #474747;
+    border: 1px solid grey;
+}
+
+.Calc .content .layer1, .layer2, .layer3, .layer4, .layer5{
+    display: flex;
+}
+
+.Calc .layer1 input{
+    width: calc(100% / 2);
+    height: 30px;
+}
